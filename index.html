@@ -19,20 +19,23 @@
                 </div>
             </section>
             <section class="section2">
-                <img id="post" src="images/post-courbet.jpg" alt="A painting of a person with long hair holding is head in shock with eyes wide open.">
+                <img id="click-post" src="images/post-courbet.jpg" alt="A painting of a person with long hair holding is head in shock with eyes wide open.">
             </section>
-            <section class="interaction">
-                <div>
-                    <div><img src="images/icon-heart.png" alt="Heart icon, when clicked likes the photo."></div>
-                    <div><img src="images/icon-comment.png" alt="Comment icon, when clicked adds a comment."></div>
-                    <div><img src="images/icon-dm.png" alt="DM icon, when clicked sends the post as a message."></div>
-                </div>
-                <div><p><strong>25,360</strong>likes</p></div>
-                <div><p><strong>username</strong>description....</p></div>
-                <div class="container"></div>
+            <section class="section3">
+                    <div class="btn-container">
+                        <div role="button" type="button" id="like-btn"><img id="heart" src="images/icon-heart.png" alt="Heart icon, when clicked likes the photo."></div>
+                        <div role="button" type="button" id="comment-btn"><img id="comment" src="images/icon-comment.png" alt="Comment icon, when clicked adds a comment."></div>
+                        <div role="button" type="button" id="dm-btn"><img id="dm" src="images/icon-dm.png" alt="DM icon, when clicked sends the post as a message."></div>
+                    </div>
+                <div class="likes"><p><strong id="like-num">25360</strong> likes</p></div>
+                <div class="description"><p><strong>gus1819</strong> I'm feelin a bit stressed tbh...</p></div>
+                <div id="container"></div>
             </section>
+
+
+            
         </main>
         
-        <script src="index.js"></script>
+        <script src="node.js"></script>
     </body>
 </html>

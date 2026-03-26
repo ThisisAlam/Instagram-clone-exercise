@@ -1,7 +1,9 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: sans-serif;
+    max-width: 600px;
+    border: 1px solid black;
 }
 
 /* Header */
@@ -20,22 +22,27 @@ header .app-logo {
 header .user-avatar {
     display: block;
     width: 50px;
-    height: 50px;
+    height: auto;
     border-radius: 50%;
 }
+
+main{
+    /* overflow-y: scroll; */
+}
+
 
 /* Main Section-1 */
 .section1 {
     padding: 15px;
     height: 100px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     justify-content: start;
     align-items: end;
 }
 .section1 .section1-group {
     display: flex;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -53,15 +60,73 @@ header .user-avatar {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .name-location address {
     font-style: normal;
 }
 
 /* Main Section-2 */
-.section2 #post {
+.section2 #click-post {
     display: block;
     width: 100%;
     height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.scale-up {
+    transform: scale(1.025);
+}
+.scale-down {
+    transform: scale(0.975);
+}
+
+/* Main Section-3 */
+.section3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.section3 .btn-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.section3 .likes {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.likes p, .description p {
+    margin: 0;
+}
+.section3 .description {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+#comment-btn, #like-btn, #dm-btn{
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+#comment-btn:hover, #like-btn:hover, #dm-btn:hover,
+ #comment-btn:focus, #like-btn:focus, #dm-btn:focus{
+    transform: scale(1.15);
+}
+#comment-btn:active, #like-btn:active, #dm-btn:active{
+    transform: scale(0.95);
+}
+
+#heart, #comment, #dm {
+    width: 30px;
+    height: 30px;
+}
+#container {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
 }
