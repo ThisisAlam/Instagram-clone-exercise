@@ -1,9 +1,38 @@
 <html>
     <head>
+        <title>Oldgram - A photo uploader</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <img src="images/logo.png">
+        <header>
+            <img class="app-logo" src="images/logo.png" alt="logo icon of oldgram">
+            <img class="user-avatar" src="images/user-avatar.png" alt="avatar or profile picture of the instagram's user.">
+        </header>
+        <main>
+            <section class="section1">
+                <div class="section1-group">
+                    <img id="profile" src="images/avatar-courbet.jpg" alt="profile avatar of courbet instagram account.">
+                    <div class="name-location">
+                        <name><strong>Gustave Courbet</strong></name>
+                        <address>Zundert, Netherlands</address>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <img id="post" src="images/post-courbet.jpg" alt="A painting of a person with long hair holding is head in shock with eyes wide open.">
+            </section>
+            <section class="interaction">
+                <div>
+                    <div><img src="images/icon-heart.png" alt="Heart icon, when clicked likes the photo."></div>
+                    <div><img src="images/icon-comment.png" alt="Comment icon, when clicked adds a comment."></div>
+                    <div><img src="images/icon-dm.png" alt="DM icon, when clicked sends the post as a message."></div>
+                </div>
+                <div><p><strong>25,360</strong>likes</p></div>
+                <div><p><strong>username</strong>description....</p></div>
+                <div class="container"></div>
+            </section>
+        </main>
+        
         <script src="index.js"></script>
     </body>
 </html>
