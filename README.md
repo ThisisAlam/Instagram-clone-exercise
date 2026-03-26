@@ -33,6 +33,22 @@ This project focuses on building interactive UI and understanding how JavaScript
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Feed
+![Home Feed](screenshots/image-1.png)
+
+### ❤️ Like Interaction
+![Like Feature](screenshots/image-2.png)
+
+### 💬 Comment Feature
+![Comment Feature](screenshots/image-3.png)
+
+### 🎯 UI Layout
+![UI Layout](screenshots/image-4.png)
+
+---
+
 ## 🧠 What I Learned
 
 * **DOM Manipulation**
